@@ -15,10 +15,16 @@ def services(request):
     return HttpResponse("this is servicespage")
 
 def login(request):
-    return HttpResponse("this is loginpage")
+    return render(request,'login.html')
 
-def loginall(request):
-    return render(request,'loginall.html')
+
+
+def signup(request):
+    return render(request,'signup.html')
+
+def guidelines(request):
+    return render(request,'guidelines.html')
+
 
 def donor_form(request):
     if request.method == "POST":

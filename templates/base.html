@@ -150,8 +150,7 @@
     {
       background-color: #75B3A4;
     }
-
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1075px) {
       .logo
       {
         transform: translateX(10px);
@@ -290,6 +289,19 @@
       transform: translate(-50px,-4px);
     }
   }
+
+  .sec
+      {
+       
+        margin-left: 40px;
+      }
+      .sec a{
+        text-transform: uppercase;
+
+        font-family: 'roboto';
+        font-weight: 400;
+      }
+    
     </style>
 
   </head>
@@ -341,7 +353,7 @@
               <a class="nav-link text-white nav-2-text txt" href="#">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white nav-2-text txt " href="#">services</a>
+              <a class="nav-link text-white nav-2-text txt " href="guidelines.html">User guidelines</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white nav-2-text txt " href="#">contact</a>
@@ -358,6 +370,43 @@
     </nav>
 
     {% block body%} {%endblock body%}
+
+    <div class="container-fluid d-flex justify-content-center sec-1">
+      <footer class="container-fluid py-5">
+        <div class="container-fluid d-flex justify-content-center row">
+          <div class="col-6 col-md-2 mb-3 sec-2 sec">
+            <h2>EXTERNAL LINKS</h2>
+            <ul class="lst nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem, ipsum.</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem, ipsum dolor.</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem ipsum dolor sit amet.</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem, ipsum.</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lorem, ipsum dolor.</a></li>
+            </ul>
+          </div>
+    
+          <div class=" col-6 col-md-2 mb-3 sec-3 sec">
+            <h2>CONTACT</h2>
+            <ul class="lst nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-twitter"></i> Twitter</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-facebook"></i> Facebook</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-envelope"></i> E-mail</a></li>
+           
+            </ul>
+          </div>
+    
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top sec-3">
+          <p>© 2022 TECHVIORS 2022, All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#">Terms of Service</a></li>
+            <li class="ms-3"><a class="link-dark" href="#">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+      </footer>
+    </div>
     <!-- <a class="navbar-brand" href="#"><img src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" class="rounded-circle shadow-4 profile-photo"
       alt="Avatar" /></a> -->
     <!-- <div class="container photo ">
