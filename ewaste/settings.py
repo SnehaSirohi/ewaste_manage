@@ -77,12 +77,12 @@ WSGI_APPLICATION = 'ewaste.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'e_waste',
-        'USER' :'root',
-        'PASSWORD':'root12345',
-        'PORT':'3306',
-        'HOST' : '127.0.0.1',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR/'db.sqlite3'
+        # 'USER' :'root',
+        # 'PASSWORD':'root12345',
+        # 'PORT':'3306',
+        # 'HOST' : '127.0.0.1',
     }
 }
 
