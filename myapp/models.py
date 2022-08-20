@@ -1,5 +1,6 @@
 from datetime import datetime
 from django.db import models
+from django.contrib.auth.forms import User
 
 # Create your models here.
 class Donor_form(models.Model):
@@ -22,4 +23,13 @@ class Donor_form(models.Model):
     e_img2 = models.FileField(upload_to='', storage=None, max_length=100)
     e_img3 = models.FileField(upload_to='',storage=None, max_length=100)
     date = models.DateField()
+
+class extendeduser(models.Model):
+     name = models.CharField(max_length=20)
+     aadhaar_no = models.CharField(max_length=20, null = True)
+     email =  models.CharField(max_length = 12,null= True)
+     password = models.CharField(max_length = 20,null = True)
+     username = models.CharField(max_length = 20,null = True)
+     def __str__(self):
+        return self.username
     
